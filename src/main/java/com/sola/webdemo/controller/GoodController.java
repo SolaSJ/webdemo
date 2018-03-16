@@ -18,7 +18,7 @@ public class GoodController {
     @Autowired
     private IGoodService goodService;
 
-    @GetMapping(value = "/{goodId}")
+    @RequestMapping(value = "/{goodId}")
     @ResponseBody
     public Good getGood(@PathVariable(name = "goodId") Integer goodId) {
         return goodService.getGood(goodId);
