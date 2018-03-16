@@ -1,7 +1,8 @@
-package com.sola.webdemo.service.impl.Good;
+package com.sola.webdemo.service.Good.impl;
 
 import com.sola.webdemo.entity.Good;
 import com.sola.webdemo.mapper.GoodMapper;
+import com.sola.webdemo.service.Good.IGoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,14 +12,15 @@ import org.springframework.stereotype.Service;
  * @create: 2018/03/16 14:18
  **/
 @Service
-public class GoodServiceImpl {
+public class GoodServiceImpl implements IGoodService {
 
     @Autowired
     private GoodMapper goodMapper;
 
-    public Good getGood(Good good) {
-        good = goodMapper.selectByPrimaryKey(good);
-        return good;
+    public Good getGood(int goodId) {
+        Good good = new Good();
+        good.setGoodId(goodId);
+        return goodMapper.selectByPrimaryKey(good);
     }
 
 }

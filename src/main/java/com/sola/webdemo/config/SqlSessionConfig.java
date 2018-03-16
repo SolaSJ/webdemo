@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 /**
- * @description: 用于注入一个sqlsession
+ * @description: 用于注入一个SqlSessionFactory
  * @author: SolaSJ@qq.com
  * @create: 2018/03/16 11:50
  **/
