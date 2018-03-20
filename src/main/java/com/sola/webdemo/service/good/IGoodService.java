@@ -1,4 +1,4 @@
-package com.sola.webdemo.service.Good;
+package com.sola.webdemo.service.good;
 
 import com.sola.webdemo.entity.Good;
 

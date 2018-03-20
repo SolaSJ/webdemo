@@ -4,7 +4,7 @@ import org.apache.ibatis.javassist.tools.rmi.Sample;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Producer {
 
     private final KafkaTemplate<Object, SampleMessage> kafkaTemplate;

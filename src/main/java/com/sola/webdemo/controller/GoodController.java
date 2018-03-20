@@ -1,7 +1,7 @@
 package com.sola.webdemo.controller;
 
 import com.sola.webdemo.entity.Good;
-import com.sola.webdemo.service.Good.IGoodService;
+import com.sola.webdemo.service.good.IGoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

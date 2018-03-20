@@ -18,7 +18,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Bean
+    // @Bean
     public ApplicationRunner runner(Producer producer) {
         producer.send(new SampleMessage(1, "A simple test message"));
         return null;

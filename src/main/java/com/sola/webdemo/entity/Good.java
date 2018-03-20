@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table(name = "good ")
+@Table(name = "good")
 public class Good {
 
     @Id
