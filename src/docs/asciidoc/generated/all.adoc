@@ -1,0 +1,200 @@
+= Swagger Petstore
+
+
+[[_overview]]
+== Overview
+Petstore API Description
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0.0
+
+
+=== Contact information
+[%hardbreaks]
+__Contact__ : sola
+__Contact Email__ : sola@qq.com
+
+
+=== License information
+[%hardbreaks]
+__License__ : Apache 2.0
+__License URL__ : http://www.apache.org/licenses/LICENSE-2.0.html
+__Terms of service__ : null
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost:8080
+__BasePath__ : /
+
+
+=== Tags
+
+* Sola : json操作接口
+* good-controller : Good Controller
+* song-controller : Song Controller
+
+
+
+
+[[_paths]]
+== Paths
+
+[[_getgoodusingget]]
+=== 获取商品信息
+....
+GET /good/{goodId}
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**goodId** +
+__optional__|商品Id|integer (int32)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_good,Good>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* good-controller
+
+
+[[_getstringnoblankusingpost]]
+=== getStringNoBlank
+....
+POST /json{?json}
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**json** +
+__optional__|json|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|string
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|**405**|Invalid input|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* Sola
+
+
+[[_songusingpost]]
+=== song
+....
+POST /song{?data}
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**data** +
+__optional__|data|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* song-controller
+
+
+
+
+[[_definitions]]
+== Definitions
+
+[[_good]]
+=== Good
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**goodId** +
+__optional__|integer (int32)
+|**goodName** +
+__optional__|string
+|===
+
+
+
+
+
